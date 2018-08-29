@@ -1,0 +1,35 @@
+title: Danilo Lutz
+description: Obsessed for learning. OOP, PHP, C# and Python lover. Since 2003 coding... I'm an open-source enthusiast at, share links on Twitter and write articles on Medium.
+url: https://danilolutz.me
+
+author:
+  name: Danilo Lutz
+  picture: https://avatars0.githubusercontent.com/u/1561739
+  twitter: danilolutz
+
+twitter:
+  username: danilolutz
+
+logo: https://avatars0.githubusercontent.com/u/1561739
+
+social:
+  links:
+      - https://github.com/danilolutz
+      - https://keybase.io/danilolutz
+      - https://medium.com/@danilolutz
+      - https://twitter.com/danilolutz
+
+google_site_verification: 2PD5F3Rk4Lit_H-FhBnpv5z7B5bDeyp4Co3U2g9QZHQ
+
+exclude: [Gemfile, Gemfile.lock, LICENSE, README.md]
+
+sass:
+  style: compressed
+  sass_dir: assets/styles
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji

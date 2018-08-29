@@ -1,0 +1,128 @@
+---
+---
+body {
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #24292e;
+  font-size: 17px;
+  line-height: 28px;
+  transition: color 150ms ease;
+}
+
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+a { text-decoration: none; }
+
+small { font-size: 10px; }
+
+h1 {
+  font-weight: 500;
+  transition: color 100ms ease;
+}
+
+.page--not-found article {
+  z-index: 1;
+
+  h1, p, a { color: #fff; }
+}
+
+.page--index {
+  p a,
+  small a {
+    border-bottom: 2px solid transparent;
+    color: #6d52f3;
+    padding-bottom: 1px;
+    transition: all 150ms ease;
+    position: relative;
+
+    &:after {
+      border-bottom: 2px solid #6d52f3;
+      bottom: -2px;
+      content: '';
+      left: 0;
+      position: absolute;
+      transition: width 150ms ease-in-out;
+      width: 0;
+    }
+
+    &:hover:after { width: 100% }
+  }
+}
+
+.gif {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    background-color: rgba(0,0,0,.65);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+article {
+  max-width: 550px;
+  text-align: center;
+  width: 90%;
+}
+
+img {
+  border-radius: 100%;
+  max-width: 150px;
+  cursor: pointer;
+  transition: transform 150ms ease-out;
+
+  &:hover { transform: scale(1.05); }
+  &:active { transform: scale(0.95); }
+}
+
+footer { margin-bottom: 20px; }
+
+svg { transition: all 150ms ease; }
+
+.dark-mode {
+  color: #ccc;
+  background-color: #010101;
+
+  h1 { color: #fff; }
+
+  .page--index p a,
+  .page--index small a {
+    color: #fff;
+
+    &:hover { border-color: #fff; }
+  }
+
+  svg {
+    color: #010101 !important;
+    fill: #fff !important;
+  }
+}
