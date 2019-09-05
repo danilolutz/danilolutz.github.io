@@ -1,4 +1,4 @@
-# danilolutz.github.io (danilolutz.me)
+# danilolutz.github.io
 
 This is my personal website repository. Keeping it simple.
 
@@ -7,4 +7,4 @@ This is my personal website repository. Keeping it simple.
 
 ## License
 
-[MIT](LICENSE) © [Danilo Lutz](https://danilolutz.me)
+[MIT](LICENSE) © [Danilo Lutz](https://danilolutz.github.io)
